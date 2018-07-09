@@ -1,0 +1,12 @@
+{
+  "name": "dist",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "ls -al && git status && git add . & git commit -m '部署' & git push -f git@github.com:LDQ-first/vuepress-test.git master:gh-pages"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
