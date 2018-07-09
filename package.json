@@ -7,7 +7,7 @@
     "git": "git add . & git commit -m '部署' & git push",
     "docs:dev": "cross-env NODE_ENV=develop vuepress dev docs",
     "docs:build": "cross-env NODE_ENV=production vuepress build docs",
-    "deploy": "ls -al && git status && git add . & git commit -m '部署' & git push -f git@github.com:LDQ-first/vuepress-test.git master:gh-pages"
+    "deploy": "ls -al && git init && git status && git add . & git commit -m '部署' & git push -f git@github.com:LDQ-first/vuepress-test.git master:gh-pages"
   },
   "repository": {
     "type": "git",
