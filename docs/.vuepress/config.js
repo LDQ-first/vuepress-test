@@ -1,7 +1,11 @@
+const isProd = process.env.NODE_ENV === 'production'
+console.log('process.env.NODE_ENV: ', process.env.NODE_ENV)
+console.log('isProd: ', isProd)
+
 module.exports = {
   title: 'Hello VuePress',
   description: 'Just playing around',
-  base: '/vuepress-test/',
+  base: isProd ? '/vuepress-test/' : '/',
   markdown: {
     lineNumbers: true,
     // markdown-it-anchor 的选项
