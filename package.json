@@ -7,8 +7,8 @@
     "git": "git add . & git commit -m '部署' & git push",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "dist": "cd docs\\.vuepress\\dist\\",
-    "deploy": "npm run dist && ls -al && git status && git add . & git commit -m '部署' & git push -f git@github.com:LDQ-first/vuepress-test.git master:gh-pages"
+    "predeploy": "cd docs\\.vuepress\\dist\\",
+    "deploy": "ls -al && git status && git add . & git commit -m '部署' & git push -f git@github.com:LDQ-first/vuepress-test.git master:gh-pages"
   },
   "repository": {
     "type": "git",
