@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{172:function(t,n,o){"use strict";o.r(n);var s=o(0),e=Object(s.a)({},function(){var t=this.$createElement,n=this._self._c||t;return n("div",{staticClass:"content"},[n("h1",{attrs:{id:"two"}},[this._v("two")]),n("p",[n("router-link",{attrs:{to:"/foo/"}},[this._v("foo")])],1)])},[],!1,null,null,null);n.default=e.exports}}]);
