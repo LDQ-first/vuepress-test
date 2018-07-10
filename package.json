@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "push:master": "git add . & git commit -m '取消自定义主题' & git push",
+    "push:master": "git add . & git commit -m '学习配置' & git push",
     "docs:dev": "cross-env NODE_ENV=develop vuepress dev docs",
     "docs:build": "cross-env NODE_ENV=production vuepress build docs",
     "deploy:dist": "gh-pages -d docs/.vuepress/dist",
@@ -28,6 +28,6 @@
   "devDependencies": {
     "cross-env": "^5.2.0",
     "gh-pages": "^1.2.0",
-    "vuepress": "^0.10.2"
+    "vuepress": "^0.11.0"
   }
 }
