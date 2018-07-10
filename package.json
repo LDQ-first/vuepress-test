@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "git": "git add . & git commit -m '部署' & git push",
+    "push:master": "git add . & git commit -m '取消自定义主题' & git push",
     "docs:dev": "cross-env NODE_ENV=develop vuepress dev docs",
     "docs:build": "cross-env NODE_ENV=production vuepress build docs",
-    "deploy": "ls -al && git init && git status && git add . & git commit -m '部署' & git push -f git@github.com:LDQ-first/vuepress-test.git master:gh-pages"
+    "deploy:dist": "gh-pages -d docs/.vuepress/dist",
+    "deploy:build": "npm run docs:build && npm run deploy:dist",
+    "deploy": "npm run deploy:build && npm run push:master",
+    "dist:deploy": "ls -al && git init && git status && git add . & git commit -m '部署' & git push -f git@github.com:LDQ-first/vuepress-test.git master:gh-pages"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,7 @@
   "homepage": "https://github.com/LDQ-first/vuepress-test#readme",
   "devDependencies": {
     "cross-env": "^5.2.0",
+    "gh-pages": "^1.2.0",
     "vuepress": "^0.10.2"
   }
 }
